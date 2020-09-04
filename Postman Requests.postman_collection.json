@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "836729cf-d419-486a-b485-e716607df985",
+		"name": "Postman Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Triangle To Coordinates",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"{\\\"V1\\\":{\\\"X\\\":30,\\\"Y\\\":60},\\\"V2\\\":{\\\"X\\\":30,\\\"Y\\\":50},\\\"V3\\\":{\\\"X\\\":40,\\\"Y\\\":60}}\"",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44363/api/righttriangle",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44363",
+					"path": [
+						"api",
+						"righttriangle"
+					]
+				},
+				"description": "Post json defining a triangle using 3 vertexes and get back the coordinates of that triangle."
+			},
+			"response": []
+		},
+		{
+			"name": "Coordinate To Triangle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44363/api/righttriangle/D6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44363",
+					"path": [
+						"api",
+						"righttriangle",
+						"D6"
+					]
+				},
+				"description": "GET request to retrieve the triangle vertexes based on the coordinate of the triangle."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
