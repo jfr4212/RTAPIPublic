@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="RTAPI.Tests\**" />
+    <Content Remove="RTAPI.Tests\**" />
+    <EmbeddedResource Remove="RTAPI.Tests\**" />
+    <None Remove="RTAPI.Tests\**" />
+  </ItemGroup>
+
+
+</Project>
